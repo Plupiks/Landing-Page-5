@@ -229,34 +229,34 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   connectBlockWidth();
 
-  function gallery() {
-    Fancybox.bind('.fancybox-img-single', {
-      dragToClose: false,
+//   function gallery() {
+//     Fancybox.bind('.fancybox-img-single', {
+//       dragToClose: false,
 
-      Toolbar: false,
-      closeButton: 'outside',
+//       Toolbar: false,
+//       closeButton: 'outside',
 
-      Image: {
-        zoom: false,
-        click: false,
-        wheel: 'slide',
-      },
-    });
+//       Image: {
+//         zoom: false,
+//         click: false,
+//         wheel: 'slide',
+//       },
+//     });
 
-    Fancybox.bind('.gallery_images_image img', {
-      dragToClose: false,
-      groupAll: true,
+//     Fancybox.bind('.gallery_images_image img', {
+//       dragToClose: false,
+//       groupAll: true,
 
-      Toolbar: false,
-      closeButton: 'outside',
+//       Toolbar: false,
+//       closeButton: 'outside',
 
-      Image: {
-        zoom: false,
-        click: false,
-        wheel: 'slide',
-      },
-    });
-  }
+//       Image: {
+//         zoom: false,
+//         click: false,
+//         wheel: 'slide',
+//       },
+//     });
+//   }
 //   gallery();
 
   // Скрол до секції по кліку на силки в меню
