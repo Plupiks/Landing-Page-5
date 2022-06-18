@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         const blockID = anchor.getAttribute('href'); // Отримую силки з назвами блоків до яких буду скролити
 
-        $('html,body').animate({ scrollTop: $('' + blockID).offset().top - 40 + 'px' }, 500);
+        $('html,body').animate({ scrollTop: $('' + blockID).offset().top - 40 + 'px' }, 800);
       });
     }
   }
