@@ -229,37 +229,36 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   connectBlockWidth();
 
-//   function gallery() {
-//     Fancybox.bind('.fancybox-img-single', {
-//       dragToClose: false,
+  function gallery() {
+    Fancybox.bind('.fancybox-img-single', {
+      dragToClose: false,
 
-//       Toolbar: false,
-//       closeButton: 'outside',
+      Toolbar: false,
+      closeButton: 'outside',
 
-//       Image: {
-//         zoom: false,
-//         click: false,
-//         wheel: 'slide',
-//       },
-//     });
+      Image: {
+        zoom: false,
+        click: false,
+        wheel: 'slide',
+      },
+    });
 
-//     Fancybox.bind('.gallery_images_image img', {
-//       dragToClose: false,
-//       groupAll: true,
+    Fancybox.bind('.gallery_images_image img', {
+      dragToClose: false,
+      groupAll: true,
 
-//       Toolbar: false,
-//       closeButton: 'outside',
+      Toolbar: false,
+      closeButton: 'outside',
 
-//       Image: {
-//         zoom: false,
-//         click: false,
-//         wheel: 'slide',
-//       },
-//     });
-//   }
-//   gallery();
+      Image: {
+        zoom: false,
+        click: false,
+        wheel: 'slide',
+      },
+    });
+  }
+  gallery();
 
-  // Скрол до секції по кліку на силки в меню
   function scrollToSection() {
     const anchors = document.querySelectorAll('a[href^="#s-"]');
 
@@ -274,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   scrollToSection();
 
-  // Активний клас для меню при скролі
+  // // Активний клас для меню при скролі
   function activeClassMenu() {
     const menuLinks = document.querySelectorAll('.link a[href^="#s-"]');
     const sections = document.querySelectorAll('.section-anchor');
