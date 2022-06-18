@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   }
-  gallery();
+//   gallery();
 
   // Скрол до секції по кліку на силки в меню
   function scrollToSection() {
