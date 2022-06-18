@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
   <!-- Fonts Start -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap&_v=20220618154056"
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap&_v=20220618154056" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/fontello-standart-icons/css/fontello.css?_v=20220618154056">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/fontello-standart-icons/css/fontello.css">
   <!-- Fonts END -->
 
   <!-- Gallery -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20220618154056" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
   <!-- AOS -->
   <link rel=" stylesheet" href="libs/aos.js/aos.css">
 
-  <link rel="stylesheet" href="css/style.min.css?_v=20220618154056">
+  <!-- Fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+
+  <!-- AOS -->
+  <script src="libs/aos.js/aos.js" defer></script>
+
+  <!-- App.js -->
+  <script src="js/app.js" defer></script>
+
+  <link rel="stylesheet" href="css/style.css">
   <title>Main</title>
 
   <style>
@@ -61,413 +72,381 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
-        <div class="header__body">
-          <ul class="nav__links">
-            <li class="nav__link link">
-              <a href="#s-hero" class="link__items">Home</a>
-            </li>
-            <li class="nav__link link">
-              <a href="#s-benefits" class="link__items">Benefits</a>
-            </li>
-            <li class="nav__link link">
-              <a href="#s-info" class="link__items">Information</a>
-            </li>
-            <li class="nav__link link">
-              <a href="#s-connect" class="link__items">Connect</a>
-            </li>
-            <li class="nav__link link">
-              <a href="#s-gallery" class="link__items">Gallery</a>
-            </li>
-          </ul>
+  <div class="container">
+    <div class="header__body">
+      <ul class="nav__links">
+        <li class="nav__link link">
+          <a href="#s-hero" class="link__items">Home</a>
+        </li>
+        <li class="nav__link link">
+          <a href="#s-benefits" class="link__items">Benefits</a>
+        </li>
+        <li class="nav__link link">
+          <a href="#s-info" class="link__items">Information</a>
+        </li>
+        <li class="nav__link link">
+          <a href="#s-connect" class="link__items">Connect</a>
+        </li>
+        <li class="nav__link link">
+          <a href="#s-gallery" class="link__items">Gallery</a>
+        </li>
+      </ul>
 
-          <div class="burger-menu">
-            <div class="burger-menu__button">
-              <input class="checkbox" type="checkbox" id="checkbox"></input>
-              <label class="burger-menu__lines" for="checkbox">
-                <div class="burger-menu__line"></div>
-                <div class="burger-menu__line"></div>
-                <div class="burger-menu__line"></div>
-              </label>
-            </div>
-            <div class="burger-menu__content"></div>
-            <div class="backdrop"></div>
-          </div>
+      <div class="burger-menu">
+        <div class="burger-menu__button">
+          <input class="checkbox" type="checkbox" id="checkbox"></input>
+          <label class="burger-menu__lines" for="checkbox">
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__line"></div>
+          </label>
         </div>
+        <div class="burger-menu__content"></div>
+        <div class="backdrop"></div>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
 
     <main>
       <section class="hero section-anchor" id="s-hero">
-        <div class="container">
-          <div class="hero__body">
-            <div class="hero__image" data-aos="zoom-in">
-              <img class="fancybox-img-single" src="img/section1-img.jpg" alt="Hero Image">
-            </div>
-            <div class="hero__text-content" data-aos="fade-up" data-aos-delay="200">
-              <h1 class="hero__title">Toyota Concept-I Series</h1>
-              <div class="hero__description">
-                Toyota Concept-i and its forward-thinking UX hold a mirror up to a future that is warm, friendly,
-                engaging
-                and,
-                most of all—fun. Without further ado, meet Concept-i.
-              </div>
-            </div>
-          </div>
+  <div class="container">
+    <div class="hero__body">
+      <div class="hero__image" data-aos="zoom-in">
+        <img class="fancybox-img-single" src="img/section1-img.jpeg" alt="Hero Image">
+      </div>
+      <div class="hero__text-content" data-aos="fade-up" data-aos-delay="200">
+        <h1 class="hero__title">Toyota Concept-I Series</h1>
+        <div class="hero__description">
+          Toyota Concept-i and its forward-thinking UX hold a mirror up to a future that is warm, friendly, engaging
+          and,
+          most of all—fun. Without further ado, meet Concept-i.
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
       <article class="benefits section-anchor" id="s-benefits">
-        <div class="benefits__body">
-          <!-- section 1 -->
-          <section class="benefits__section section-block section-block_1 section-block_left">
+  <div class="benefits__body">
+    <!-- section 1 -->
+    <section class="benefits__section section-block section-block_1 section-block_left">
 
-            <!-- left block -->
-            <div class="section-block__body_left" data-aos="fade-right">
-              <div class="section-block__image">
-                <img class="fancybox-img-single" src="img/benefits/section-1__img.jpg" alt="section-block image">
-              </div>
-            </div>
-            <!-- left block -->
-
-            <!-- right block -->
-            <div class="section-block__body_right" data-aos="fade-up">
-              <div class="section-block__title_wrapper">
-                <h2 class="section-block__title">
-                  The future has arrived.
-                </h2>
-                <img src="img/section-title_img.png" alt="section-block title image">
-              </div>
-              <div class="section-block__text">
-                While we can't predict the future, we can inspire it. So what will our cars look like and how will they
-                function? Will we drive them or will they drive us? That seems to be the question on everyone's mind.
-                Well,
-                we have an idea. Cars are for people who want to go to more places safely and efficiently
-              </div>
-            </div>
-            <!-- right block -->
-          </section>
-          <!-- section 1 -->
-
-          <!-- section 2 -->
-          <section class="benefits__section section-block section-block_2 section-block_right">
-
-            <!-- left block -->
-            <div class="section-block__body_left" data-aos="fade-left">
-              <div class="section-block__image">
-                <img class="fancybox-img-single" src="img/benefits/section-2__img.jpg" alt="section-block image">
-              </div>
-            </div>
-            <!-- left block -->
-
-            <!-- right block -->
-            <div class="section-block__body_right" data-aos="fade-up">
-              <div class="section-block__title_wrapper">
-                <h2 class="section-block__title">
-                  The future has arrived.
-                </h2>
-              </div>
-              <div class="section-block__text">
-                While we can't predict the future, we can inspire it. So what will our cars look like and how will they
-                function? Will we drive them or will they drive us? That seems to be the question on everyone's mind.
-                Well,
-                we have an idea. Cars are for people who want to go to more places safely and efficiently
-              </div>
-              <button class="section-block__button">
-                <a class="section-block__button_link" href="#">learn more</a>
-              </button>
-            </div>
-            <!-- right block -->
-          </section>
-          <!-- section 2 -->
-
-          <!-- section 3 -->
-          <section class="benefits__section section-block section-block_3 section-block_right">
-
-            <!-- left block -->
-            <div class="section-block__body_left" data-aos="fade-right">
-              <div class="section-block__image">
-                <img class="fancybox-img-single" src="img/benefits/section-3__img.jpg" alt="section-block image">
-              </div>
-            </div>
-            <!-- left block -->
-
-            <!-- right block -->
-            <div class="section-block__body_right" data-aos="fade-up">
-              <div class="section-block__title_wrapper">
-                <h2 class="section-block__title">
-                  The future has arrived.
-                </h2>
-                <img class="fancybox-img-single" src="img/section-title_img.png" alt="section-block title image">
-              </div>
-              <div class="section-block__text">
-                While we can't predict the future, we can inspire it. So what will our cars look like and how will they
-                function? Will we drive them or will they drive us? That seems to be the question on everyone's mind.
-                Well,
-                we have an idea. Cars are for people who want to go to more places safely and efficiently
-              </div>
-            </div>
-            <!-- right block -->
-          </section>
-          <!-- section 3 -->
-
-          <!-- section 4 -->
-          <section class="benefits__section section-block section-block_4 section-block_left">
-
-            <!-- left block -->
-            <div class="section-block__body_left" data-aos="fade-left">
-              <div class="section-block__image">
-                <img class="fancybox-img-single" src="img/benefits/section-4__img.jpg" alt="section-block image">
-              </div>
-            </div>
-            <!-- left block -->
-
-            <!-- right block -->
-            <div class="section-block__body_right" data-aos="fade-up">
-              <div class="section-block__title_wrapper">
-                <h2 class="section-block__title">
-                  The future has arrived.
-                </h2>
-              </div>
-              <div class="section-block__text">
-                While we can't predict the future, we can inspire it. So what will our cars look like and how will they
-                function? Will we drive them or will they drive us? That seems to be the question on everyone's mind.
-                Well,
-                we have an idea. Cars are for people who want to go to more places safely and efficiently
-              </div>
-              <button class="section-block__button">
-                <a class="section-block__button_link" href="#">learn more</a>
-              </button>
-            </div>
-            <!-- right block -->
-          </section>
-          <!-- section 4 -->
+      <!-- left block -->
+      <div class="section-block__body_left" data-aos="fade-right">
+        <div class="section-block__image">
+          <img class="fancybox-img-single" src="img/benefits/section-1__img.jpeg" alt="section-block image">
         </div>
-      </article>
+      </div>
+      <!-- left block -->
+
+      <!-- right block -->
+      <div class="section-block__body_right" data-aos="fade-up">
+        <div class="section-block__title_wrapper">
+          <h2 class="section-block__title">
+            The future has arrived.
+          </h2>
+          <img src="img/section-title_img.png" alt="section-block title image">
+        </div>
+        <div class="section-block__text">
+          While we can't predict the future, we can inspire it. So what will our cars look like and how will they
+          function? Will we drive them or will they drive us? That seems to be the question on everyone's mind. Well,
+          we have an idea. Cars are for people who want to go to more places safely and efficiently
+        </div>
+      </div>
+      <!-- right block -->
+    </section>
+    <!-- section 1 -->
+
+    <!-- section 2 -->
+    <section class="benefits__section section-block section-block_2 section-block_right">
+
+      <!-- left block -->
+      <div class="section-block__body_left" data-aos="fade-left">
+        <div class="section-block__image">
+          <img class="fancybox-img-single" src="img/benefits/section-2__img.jpeg" alt="section-block image">
+        </div>
+      </div>
+      <!-- left block -->
+
+      <!-- right block -->
+      <div class="section-block__body_right" data-aos="fade-up">
+        <div class="section-block__title_wrapper">
+          <h2 class="section-block__title">
+            The future has arrived.
+          </h2>
+        </div>
+        <div class="section-block__text">
+          While we can't predict the future, we can inspire it. So what will our cars look like and how will they
+          function? Will we drive them or will they drive us? That seems to be the question on everyone's mind. Well,
+          we have an idea. Cars are for people who want to go to more places safely and efficiently
+        </div>
+        <button class="section-block__button">
+          <a class="section-block__button_link" href="#">learn more</a>
+        </button>
+      </div>
+      <!-- right block -->
+    </section>
+    <!-- section 2 -->
+
+    <!-- section 3 -->
+    <section class="benefits__section section-block section-block_3 section-block_right">
+
+      <!-- left block -->
+      <div class="section-block__body_left" data-aos="fade-right">
+        <div class="section-block__image">
+          <img class="fancybox-img-single" src="img/benefits/section-3__img.jpeg" alt="section-block image">
+        </div>
+      </div>
+      <!-- left block -->
+
+      <!-- right block -->
+      <div class="section-block__body_right" data-aos="fade-up">
+        <div class="section-block__title_wrapper">
+          <h2 class="section-block__title">
+            The future has arrived.
+          </h2>
+          <img class="fancybox-img-single" src="img/section-title_img.png" alt="section-block title image">
+        </div>
+        <div class="section-block__text">
+          While we can't predict the future, we can inspire it. So what will our cars look like and how will they
+          function? Will we drive them or will they drive us? That seems to be the question on everyone's mind. Well,
+          we have an idea. Cars are for people who want to go to more places safely and efficiently
+        </div>
+      </div>
+      <!-- right block -->
+    </section>
+    <!-- section 3 -->
+
+    <!-- section 4 -->
+    <section class="benefits__section section-block section-block_4 section-block_left">
+
+      <!-- left block -->
+      <div class="section-block__body_left" data-aos="fade-left">
+        <div class="section-block__image">
+          <img class="fancybox-img-single" src="img/benefits/section-4__img.jpeg" alt="section-block image">
+        </div>
+      </div>
+      <!-- left block -->
+
+      <!-- right block -->
+      <div class="section-block__body_right" data-aos="fade-up">
+        <div class="section-block__title_wrapper">
+          <h2 class="section-block__title">
+            The future has arrived.
+          </h2>
+        </div>
+        <div class="section-block__text">
+          While we can't predict the future, we can inspire it. So what will our cars look like and how will they
+          function? Will we drive them or will they drive us? That seems to be the question on everyone's mind. Well,
+          we have an idea. Cars are for people who want to go to more places safely and efficiently
+        </div>
+        <button class="section-block__button">
+          <a class="section-block__button_link" href="#">learn more</a>
+        </button>
+      </div>
+      <!-- right block -->
+    </section>
+    <!-- section 4 -->
+  </div>
+</article>
       <section class="info section-anchor" id="s-info">
-        <div class="container">
-          <div class="info__body">
-            <div class="info__title-wrapper">
-              <h2 class="info__title" data-aos="fade-left">
-                Concept-i puts the “i” in team
-              </h2>
-            </div>
-            <div class="info__text" data-aos="fade-up">
-              In the future, we envision you, Yui and the car working together—like teammates. Now, here comes the
-              really fun
-              part. Thanks to the car's advanced automated driving technologies, people with all levels of ability can
-              enjoy
-              the ride. You're still in charge of the car. However, through biometric sensors throughout the car,
-              Concept-i
-              can detect what you're feeling. That information then gets analyzed by the car's AI. That's when the
-              automated
-              features kick in.
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="container">
+    <div class="info__body">
+      <div class="info__title-wrapper">
+        <h2 class="info__title" data-aos="fade-left">
+          Concept-i puts the “i” in team
+        </h2>
+      </div>
+      <div class="info__text" data-aos="fade-up">
+        In the future, we envision you, Yui and the car working together—like teammates. Now, here comes the really fun
+        part. Thanks to the car's advanced automated driving technologies, people with all levels of ability can enjoy
+        the ride. You're still in charge of the car. However, through biometric sensors throughout the car, Concept-i
+        can detect what you're feeling. That information then gets analyzed by the car's AI. That's when the automated
+        features kick in.
+      </div>
+    </div>
+  </div>
+</section>
       <section class="connect section-anchor" id="s-connect">
-        <div class="connect__body">
-          <!-- left block -->
-          <div class="connect__body_left" data-aos="fade-right">
-            <div class="connect__image">
-              <img class="fancybox-img-single" src="img/benefits/section-5__img.jpg" alt="connect image">
-            </div>
-          </div>
-          <!-- left block -->
+  <div class="connect__body">
+    <!-- left block -->
+    <div class="connect__body_left" data-aos="fade-right">
+      <div class="connect__image">
+        <img class="fancybox-img-single" src="img/benefits/section-5__img.jpeg" alt="connect image">
+      </div>
+    </div>
+    <!-- left block -->
 
-          <!-- right block -->
-          <div class="connect__body_right connect__right-block" data-aos="fade-up">
-            <div class="connect__title_wrapper">
-              <h2 class="connect__title">
-                Join us in the future.
-              </h2>
-              <img src="img/section-title_img.png" alt="connect title image">
-            </div>
-            <div class="connect__text">
-              Check out the recent unveiling of Toyota Concept-i at CES 2017. And if you want even more info, check out
-              our
-              recent press release.
-            </div>
-            <button class="connect__button">
-              <a class="connect__button_link" href="#">join now</a>
-            </button>
-          </div>
-          <!-- right block -->
-        </div>
-      </section>
+    <!-- right block -->
+    <div class="connect__body_right connect__right-block" data-aos="fade-up">
+      <div class="connect__title_wrapper">
+        <h2 class="connect__title">
+          Join us in the future.
+        </h2>
+        <img src="img/section-title_img.png" alt="connect title image">
+      </div>
+      <div class="connect__text">
+        Check out the recent unveiling of Toyota Concept-i at CES 2017. And if you want even more info, check out our
+        recent press release.
+      </div>
+      <button class="connect__button">
+        <a class="connect__button_link" href="#">join now</a>
+      </button>
+    </div>
+    <!-- right block -->
+  </div>
+</section>
       <section class="gallery section-anchor" id="s-gallery">
-        <div class="gallery__body">
-          <!-- Text Content -->
-          <div class="gallery__text-content text-content" data-aos="fade-right">
-            <div class="container gallery__container">
-              <div class="text-content__body">
-                <div class="text-content__title-wrapper">
-                  <h2 class="text-content__title-wrapper_title">JOIN US IN THE FUTURE.</h2>
-                  <img src="img/section-title_img.png" alt="gallery image" class="text-content__title-wrapper_image">
-                </div>
-                <div class="text-content__text">
-                  Our vision for the car of the future starts with "Yui."
-                  Designed from the inside out, Toyota Concept-i is an exciting glimpse into a future mobility that is
-                  warm,
-                  friendly and revolves around you.
-                </div>
-              </div>
-            </div>
+  <div class="gallery__body">
+    <!-- Text Content -->
+    <div class="gallery__text-content text-content" data-aos="fade-right">
+      <div class="container gallery__container">
+        <div class="text-content__body">
+          <div class="text-content__title-wrapper">
+            <h2 class="text-content__title-wrapper_title">JOIN US IN THE FUTURE.</h2>
+            <img src="img/section-title_img.png" alt="gallery image" class="text-content__title-wrapper_image">
           </div>
-          <!-- Text Content -->
-
-          <div class="gallery__images">
-            <div class="gallery__images_wrapper">
-              <!-- column 1 -->
-              <div class="gallery_images_image" data-aos="zoom-in">
-                <img src="img/section1-img.jpg" alt="gallery image">
-              </div>
-              <div class="gallery_images_image" data-aos="zoom-in">
-                <img src="img/benefits/section-1__img.jpg" alt="gallery image">
-              </div>
-              <div class="gallery_images_image" data-aos="zoom-in">
-                <img src="img/benefits/section-2__img.jpg" alt="gallery image">
-              </div>
-              <!-- column 1 -->
-
-              <!-- column 2 -->
-              <div class="gallery_images_image" data-aos="zoom-in">
-                <img src="img/benefits/section-3__img.jpg" alt="gallery image">
-              </div>
-              <div class="gallery_images_image" data-aos="zoom-in">
-                <img src="img/benefits/section-4__img.jpg" alt="gallery image">
-              </div>
-              <div class="gallery_images_image" data-aos="zoom-in">
-                <img src="img/benefits/section-5__img.jpg" alt="gallery image">
-              </div>
-              <!-- column 2 -->
-            </div>
+          <div class="text-content__text">
+            Our vision for the car of the future starts with "Yui."
+            Designed from the inside out, Toyota Concept-i is an exciting glimpse into a future mobility that is warm,
+            friendly and revolves around you.
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+    <!-- Text Content -->
+
+    <div class="gallery__images">
+      <div class="gallery__images_wrapper">
+        <!-- column 1 -->
+        <div class="gallery_images_image" data-aos="zoom-in">
+          <img src="img/section1-img.jpeg" alt="gallery image">
+        </div>
+        <div class="gallery_images_image" data-aos="zoom-in">
+          <img src="img/benefits/section-1__img.jpeg" alt="gallery image">
+        </div>
+        <div class="gallery_images_image" data-aos="zoom-in">
+          <img src="img/benefits/section-2__img.jpeg" alt="gallery image">
+        </div>
+        <!-- column 1 -->
+
+        <!-- column 2 -->
+        <div class="gallery_images_image" data-aos="zoom-in">
+          <img src="img/benefits/section-3__img.jpeg" alt="gallery image">
+        </div>
+        <div class="gallery_images_image" data-aos="zoom-in">
+          <img src="img/benefits/section-4__img.jpeg" alt="gallery image">
+        </div>
+        <div class="gallery_images_image" data-aos="zoom-in">
+          <img src="img/benefits/section-5__img.jpeg" alt="gallery image">
+        </div>
+        <!-- column 2 -->
+      </div>
+    </div>
+  </div>
+</section>
     </main>
 
-    <footer class=" footer">
-      <div class="container">
-        <div class="footer--body">
-          <div class="footer--top ft">
-            <div class="ft--left-item fli ft--items">
-              <div class="fli--address">
-                A108 Adam Street
-                NY 535022, USA
-              </div>
-              <div class="fli--phone">
-                <span class="fli--phone-title">Phone:</span>
-                <span class="fli--phone-text fli--text">+1 5589 55488 55</span>
-              </div>
-              <div class="fli--mail">
-                <span class="fli--mail-title ">Email:</span>
-                <span class="fli--mail-text fli--text">info@example.com</span>
-              </div>
-              <div class="fli--social">
-                <a href="#" class="fli--social-item">
-                  <i class="icon-twitter-icon"></i>
-                </a>
-                <a href="#" class="fli--social-item">
-                  <i class="icon-facebook-icon"></i>
-                </a>
-                <a href="#" class="fli--social-item">
-                  <i class="icon-instagram-icon"></i>
-                </a>
-                <a href="#" class="fli--social-item">
-                  <i class="icon-linkedin-icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="ft--center-item fci ft--items">
-              <ul class="fci--list">
-                <!--START BLOCK Hero-->
-                <a href="#s-hero" class="fci--link">
-                  <i class="icon-arrow-right-icon"></i>
-                  <span>Home</span>
-                </a>
-                <!-- END BLOCK Hero-->
+     <footer class=" footer">
+   <div class="container">
+     <div class="footer--body">
+       <div class="footer--top ft">
+         <div class="ft--left-item fli ft--items">
+           <div class="fli--address">
+             A108 Adam Street
+             NY 535022, USA
+           </div>
+           <div class="fli--phone">
+             <span class="fli--phone-title">Phone:</span>
+             <span class="fli--phone-text fli--text">+1 5589 55488 55</span>
+           </div>
+           <div class="fli--mail">
+             <span class="fli--mail-title ">Email:</span>
+             <span class="fli--mail-text fli--text">info@example.com</span>
+           </div>
+           <div class="fli--social">
+             <a href="#" class="fli--social-item">
+               <i class="icon-twitter-icon"></i>
+             </a>
+             <a href="#" class="fli--social-item">
+               <i class="icon-facebook-icon"></i>
+             </a>
+             <a href="#" class="fli--social-item">
+               <i class="icon-instagram-icon"></i>
+             </a>
+             <a href="#" class="fli--social-item">
+               <i class="icon-linkedin-icon"></i>
+             </a>
+           </div>
+         </div>
+         <div class="ft--center-item fci ft--items">
+           <ul class="fci--list">
+             <!--START BLOCK Hero-->
+             <a href="#s-hero" class="fci--link">
+               <i class="icon-arrow-right-icon"></i>
+               <span>Home</span>
+             </a>
+             <!-- END BLOCK Hero-->
 
-                <!--START BLOCK Benefits-->
-                <a href="#s-benefits" class="fci--link">
-                  <i class="icon-arrow-right-icon"></i>
-                  <span>Benefits</span>
-                </a>
-                <!-- END BLOCK Benefits-->
+             <!--START BLOCK Benefits-->
+             <a href="#s-benefits" class="fci--link">
+               <i class="icon-arrow-right-icon"></i>
+               <span>Benefits</span>
+             </a>
+             <!-- END BLOCK Benefits-->
 
-                <!--START BLOCK Information-->
-                <a href="#s-information" class="fci--link">
-                  <i class="icon-arrow-right-icon"></i>
-                  <span>Information</span>
-                </a>
-                <!-- END BLOCK Information-->
+             <!--START BLOCK Information-->
+             <a href="#s-information" class="fci--link">
+               <i class="icon-arrow-right-icon"></i>
+               <span>Information</span>
+             </a>
+             <!-- END BLOCK Information-->
 
-                <!--START BLOCK Connect-->
-                <a href="#s-connect" class="fci--link">
-                  <i class="icon-arrow-right-icon"></i>
-                  <span>Connect</span>
-                </a>
-                <!-- END BLOCK Connect-->
+             <!--START BLOCK Connect-->
+             <a href="#s-connect" class="fci--link">
+               <i class="icon-arrow-right-icon"></i>
+               <span>Connect</span>
+             </a>
+             <!-- END BLOCK Connect-->
 
-                <!--START BLOCK Gallery-->
-                <a href="#s-gallery" class="fci--link">
-                  <i class="icon-arrow-right-icon"></i>
-                  <span>Gallery</span>
-                </a>
-                <!-- END BLOCK Gallery-->
+             <!--START BLOCK Gallery-->
+             <a href="#s-gallery" class="fci--link">
+               <i class="icon-arrow-right-icon"></i>
+               <span>Gallery</span>
+             </a>
+             <!-- END BLOCK Gallery-->
 
-                <!--START BLOCK Impressum-->
-                <a href="impressum.html" class="fci--link">
-                  <i class="icon-arrow-right-icon"></i>
-                  <span>Impressum und Datenschutzerklärung</span>
-                </a>
-                <!-- END BLOCK Impressum-->
-              </ul>
-            </div>
-            <div class="ft--right-item fri ft--items">
-              <h4 class="fri--title">Footer Info</h4>
-              <div class="fri--text">
-                Ihre Website ist so programmiert, dass sie keine Cookies sammelt, deswegen brauchen Sie auch
-                keine
-                weiteren
-                Zustimmungsfenstern für eine Zuslassung der Cookies. Das wird auch in ihrer - Ihre Website ist
-                so
-                programmiert, dass sie keine Cookies sammelt, deswegen brauchen Sie auch keine weiteren
-                Zustimmungsfenstern
-                für eine Zuslassung der Cookies. Das wird auch in ihrer
-              </div>
-            </div>
-          </div>
-          <div class="footer--bottom fb">
-            <div class="fb--text">
-              Deine Webseite - All Rights Reserved
-            </div>
-          </div>
-        </div>
-    </footer>
+             <!--START BLOCK Impressum-->
+             <a href="impressum.html" class="fci--link">
+               <i class="icon-arrow-right-icon"></i>
+               <span>Impressum und Datenschutzerklärung</span>
+             </a>
+             <!-- END BLOCK Impressum-->
+           </ul>
+         </div>
+         <div class="ft--right-item fri ft--items">
+           <h4 class="fri--title">Footer Info</h4>
+           <div class="fri--text">
+             Ihre Website ist so programmiert, dass sie keine Cookies sammelt, deswegen brauchen Sie auch
+             keine
+             weiteren
+             Zustimmungsfenstern für eine Zuslassung der Cookies. Das wird auch in ihrer - Ihre Website ist
+             so
+             programmiert, dass sie keine Cookies sammelt, deswegen brauchen Sie auch keine weiteren
+             Zustimmungsfenstern
+             für eine Zuslassung der Cookies. Das wird auch in ihrer
+           </div>
+         </div>
+       </div>
+       <div class="footer--bottom fb">
+         <div class="fb--text">
+           Deine Webseite - All Rights Reserved
+         </div>
+       </div>
+     </div>
+ </footer>
   </div>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220618154056"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-  <!-- Fancybox -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20220618154056"></script>
-
-  <!-- AOS -->
-  <script src="libs/aos.js/aos.js?_v=20220618154056"></script>
-
-  <!-- App.js -->
-  <script src="js/app.js?_v=20220618154056"></script>
-  <script>
-    AOS.init({
-      // Global settings:
-      once: true,
-      duration: 1000,
-      delay: 100,
-      anchorPlacement: 'top'
-    });
-  </script>
 </body>
 
 </html>
