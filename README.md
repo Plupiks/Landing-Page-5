@@ -1,6 +1,6 @@
 # Landing Page (Creator-2)
 
-![](https://github.com/Plupiks/Landing-Page-Creator-2/blob/faa66cdcbc9f9f13df97f6a643cb3053b4690942/img/creator2.jpg)
+![](https://github.com/Plupiks/Landing-Page-Product/blob/main/img/main-img.jpg)
 
 The following elements are present in this landing:
 - The standard burger menu, on mobile devices, slides to the right. When scrolling, all forces are assigned an active class that corresponds to the active section that the user is viewing.
@@ -8,7 +8,7 @@ The following elements are present in this landing:
 - Photo gallery with filter and animation when hovering
 - For Benefits Section implemented a script for automatic internal and external indentation. Each subsequent block in this section is mirrored, so this script also helps determine which side you want to indent regardless of the number of blocks in this section.
 
-[Link to the working page](https://github.com/Plupiks/Landing-Page-Product/blob/main/img/main-img.jpg)
+[Link to the working page](https://plupiks.github.io/Landing-Page-Product/)
 
 <br>
 
