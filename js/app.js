@@ -123,8 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $(window).on('load resize', () => {
       const padingValue = calcPadding(benefitsBody, container); // (section-width, container-width)
       const widthValue = calcWidth(benefitsBody, sectionRightBlock, padingValue, 60); // (section-width, text-block, text-block padding, margin)
-      const benefitsSectionLeft = [];
-      const benefitsSectionRight = [];
+      const benefitsSections = [];
 
       // Calculate padding
       function calcPadding(benefitsBody, container) {
@@ -151,32 +150,25 @@ document.addEventListener('DOMContentLoaded', function () {
       setWidthForImage();
 
       function setPaddingforTextBlock() {
-        benefitsSectionLeft.push(benefitsSection[0], benefitsSection[2]);
-        benefitsSectionRight.push(benefitsSection[1], benefitsSection[3]);
+        let paddingDirection = [];
+
+        for (let i = 0; i < benefitsSection.length; i++) {
+          benefitsSections.push(benefitsSection[i]);
+
+          paddingDirection.push((i + 1) % 2 === 0 ? 'padding-left' : 'padding-right');
+        }
 
         if ($(window).width() > 1250) {
-          benefitsSectionLeft.forEach((leftBlock) => {
-            leftBlock.style.paddingRight = padingValue + 'px';
-          });
-
-          benefitsSectionRight.forEach((rightBlock) => {
-            rightBlock.style.paddingLeft = padingValue + 'px';
-          });
+          for (let i = 0; i < benefitsSection.length; i++) {
+            $(benefitsSections[i]).css(`${paddingDirection[i]}`, `${padingValue}px`);
+          }
         } else if ($(window).width() < 1250 && $(window).width() > 918) {
-          benefitsSectionLeft.forEach((leftBlock) => {
-            leftBlock.style.paddingRight = '20px';
-          });
-
-          benefitsSectionRight.forEach((rightBlock) => {
-            rightBlock.style.paddingLeft = '20px';
-          });
+          for (let i = 0; i < benefitsSection.length; i++) {
+            $(benefitsSections[i]).css(`${paddingDirection[i]}`, `20px`);
+          }
         } else {
-          benefitsSectionLeft.forEach((leftBlock) => {
-            leftBlock.style.padding = '0';
-          });
-
-          benefitsSectionRight.forEach((rightBlock) => {
-            rightBlock.style.padding = '0';
+          benefitsSectionLeft.forEach((block) => {
+            block.style.padding = '0';
           });
         }
       }
