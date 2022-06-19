@@ -147,35 +147,35 @@ document.addEventListener('DOMContentLoaded', function () {
               sectionLeftBlock.style.width = '100%';
             });
           }
-        })
+        }
+        setWidthForImage();
+
+        function setPaddingforTextBlock() {
+          let paddingDirection = [];
+
+          for (let i = 0; i < benefitsSection.length; i++) {
+            benefitsSections.push(benefitsSection[i]);
+
+            paddingDirection.push((i + 1) % 2 === 0 ? 'padding-left' : 'padding-right');
+          }
+
+          if ($(window).width() > 1250) {
+            for (let i = 0; i < benefitsSection.length; i++) {
+              $(benefitsSections[i]).css(`${paddingDirection[i]}`, `${padingValue}px`);
+            }
+          } else if ($(window).width() < 1250 && $(window).width() > 918) {
+            for (let i = 0; i < benefitsSection.length; i++) {
+              $(benefitsSections[i]).css(`${paddingDirection[i]}`, `20px`);
+            }
+          } else {
+            benefitsSectionLeft.forEach((block) => {
+              block.style.padding = '0';
+            });
+          }
+        }
+        setPaddingforTextBlock();
+      });
     }
-      setWidthForImage();
-
-      function setPaddingforTextBlock() {
-        let paddingDirection = [];
-
-        for (let i = 0; i < benefitsSection.length; i++) {
-          benefitsSections.push(benefitsSection[i]);
-
-          paddingDirection.push((i + 1) % 2 === 0 ? 'padding-left' : 'padding-right');
-        }
-
-        if ($(window).width() > 1250) {
-          for (let i = 0; i < benefitsSection.length; i++) {
-            $(benefitsSections[i]).css(`${paddingDirection[i]}`, `${padingValue}px`);
-          }
-        } else if ($(window).width() < 1250 && $(window).width() > 918) {
-          for (let i = 0; i < benefitsSection.length; i++) {
-            $(benefitsSections[i]).css(`${paddingDirection[i]}`, `20px`);
-          }
-        } else {
-          benefitsSectionLeft.forEach((block) => {
-            block.style.padding = '0';
-          });
-        }
-      }
-      setPaddingforTextBlock();
-    });
   }
   benefitsBlockWidth();
 
