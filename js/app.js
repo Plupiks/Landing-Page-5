@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
               sectionLeftBlock.style.width = '100%';
             });
           }
-        }
+        })
     }
       setWidthForImage();
 
