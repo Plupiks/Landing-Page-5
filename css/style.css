@@ -402,14 +402,12 @@ main {
   padding-left: 50px;
 }
 
-.section-block_1 .section-block__body_right,
-.section-block_3 .section-block__body_right {
+.benefits__section:nth-child(odd) .section-block__body_right {
   width: 415px;
   margin-left: 60px;
 }
 
-.section-block_2 .section-block__body_right,
-.section-block_4 .section-block__body_right {
+.benefits__section:nth-child(even) .section-block__body_right {
   width: 415px;
   margin-right: 60px;
 }
