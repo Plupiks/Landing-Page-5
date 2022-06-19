@@ -120,33 +120,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const sectionLeftBlock = document.querySelectorAll('.section-block__body_left');
     const sectionRightBlock = document.querySelector('.section-block__body_right');
 
-    $(window).on('load resize', () => {
-      const padingValue = calcPadding(benefitsBody, container); // (section-width, container-width)
-      const widthValue = calcWidth(benefitsBody, sectionRightBlock, padingValue, 60); // (section-width, text-block, text-block padding, margin)
-      const benefitsSections = [];
+    if (benefitsBody) {
+      $(window).on('load resize', () => {
+        const padingValue = calcPadding(benefitsBody, container); // (section-width, container-width)
+        const widthValue = calcWidth(benefitsBody, sectionRightBlock, padingValue, 60); // (section-width, text-block, text-block padding, margin)
+        const benefitsSections = [];
 
-      // Calculate padding
-      function calcPadding(benefitsBody, container) {
-        return (benefitsBody.clientWidth - container.clientWidth) / 2;
-      }
-
-      // Calculate width
-      function calcWidth(benefitsBody, sectionRightBlock, padingValue, margin) {
-        return benefitsBody.clientWidth - sectionRightBlock.clientWidth - padingValue - margin;
-      }
-
-      // set width for image block
-      function setWidthForImage() {
-        if ($(window).width() > 918) {
-          sectionLeftBlock.forEach((sectionLeftBlock) => {
-            sectionLeftBlock.style.width = widthValue + 'px';
-          });
-        } else {
-          sectionLeftBlock.forEach((sectionLeftBlock) => {
-            sectionLeftBlock.style.width = '100%';
-          });
+        // Calculate padding
+        function calcPadding(benefitsBody, container) {
+          return (benefitsBody.clientWidth - container.clientWidth) / 2;
         }
-      }
+
+        // Calculate width
+        function calcWidth(benefitsBody, sectionRightBlock, padingValue, margin) {
+          return benefitsBody.clientWidth - sectionRightBlock.clientWidth - padingValue - margin;
+        }
+
+        // set width for image block
+        function setWidthForImage() {
+          if ($(window).width() > 918) {
+            sectionLeftBlock.forEach((sectionLeftBlock) => {
+              sectionLeftBlock.style.width = widthValue + 'px';
+            });
+          } else {
+            sectionLeftBlock.forEach((sectionLeftBlock) => {
+              sectionLeftBlock.style.width = '100%';
+            });
+          }
+        }
+    }
       setWidthForImage();
 
       function setPaddingforTextBlock() {
