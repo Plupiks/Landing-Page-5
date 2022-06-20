@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
               $(benefitsSections[i]).css(`${paddingDirection[i]}`, `20px`);
             }
           } else {
-            benefitsSectionLeft.forEach((block) => {
+            benefitsSections.forEach((block) => {
               block.style.padding = '0';
             });
           }
