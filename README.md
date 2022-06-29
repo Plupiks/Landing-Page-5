@@ -16,6 +16,7 @@ The following elements are present in this landing:
 
 ## Libraries used
 - `Fancybox.js` - image gallery
+- `AOS` - animation on scroll
 
 <br>
 
