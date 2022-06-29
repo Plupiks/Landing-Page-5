@@ -2,6 +2,8 @@
 
 ![](https://github.com/Plupiks/Landing-Page-Product/blob/main/img/main-img.jpg)
 
+## About:
+
 The following elements are present in this landing:
 - The standard burger menu, on mobile devices, slides to the right. When scrolling, all forces are assigned an active class that corresponds to the active section that the user is viewing.
 - Ability to view the image you clicked.
