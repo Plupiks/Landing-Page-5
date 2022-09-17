@@ -10,7 +10,7 @@ The following elements are present in this landing:
 - Photo gallery with filter and animation when hovering
 - For Benefits Section implemented a script for automatic internal and external indentation. Each subsequent block in this section is mirrored, so this script also helps determine which side you want to indent regardless of the number of blocks in this section.
 
-[Link to the working page](https://plupiks.github.io/Landing-Page-Product/)
+[Link to the working page](https://plupiks.github.io/Landing-Page-5/)
 
 <br>
 
